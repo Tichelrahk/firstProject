@@ -4,8 +4,12 @@
   "description": "First Project in Node",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Etienne Bovet",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+  	    "node": "10.16.3"
+  }
 }
