@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 5000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   fs.readFile('homepageview.html', function(err, data) {
-	  res.setHeader('Content-Type', 'text/plain');
+	  res.writeHead(200, {'Content-Type': 'text/html'});
 	  res.write(data);
 	  res.end();
 	});
